@@ -1,0 +1,73 @@
+.trip-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+}
+
+
+.trip-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.trip-form input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.trip-form input:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.trip-form button {
+  padding: 10px 16px;
+  background-color: #5da5ed;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.trip-form button:hover {
+  background-color: #1976d2;
+}
+
+.trip-container {
+  overflow-x: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 600px) {
+  .trip-form input {
+    width: 100%;
+  }
+
+  .trip-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-header h1 {
+    font-size: 22px;
+  }
+}
